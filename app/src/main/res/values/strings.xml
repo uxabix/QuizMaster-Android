@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">GeoQuiz</string>
+    <string name="button_true">True</string>
+    <string name="button_false">False</string>
+    <string name="button_next">Next</string>
+    <string name="hint_button">Hint</string>
+    <string name="question_1">The Great Wall of China is visible from the Moon with the naked eye.</string>
+    <string name="question_2">Honey never spoils.</string>
+    <string name="question_3">The capital of Australia is Sydney.</string>
+    <string name="question_4">An octopus has three hearts.</string>
+    <string name="question_5">Humans have more than five senses.</string>
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Incorrect!</string>
+    <string name="title_activity_prompt">Hint</string>
+    <string name="show_answer_button">Show Answer</string>
+    <string name="answer_was_shown">Cheating is wrong.</string>
+    <string name="score_text">Your score: %1$d / %2$d</string>
+    <string name="hint_question_text">Are you sure you want to see the answer?</string>
+    <string name="hint_answer_button">Show hint</string>
+    <string name="hint_prompt_show_button">Show hint</string>
+</resources>

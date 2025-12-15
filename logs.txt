@@ -1,0 +1,76 @@
+2025-12-01 12:18:25.221  2120-2120  Events                  com.example.myapplication            D  onCreate(Bundle?) called
+2025-12-01 12:18:27.525  2120-2120  Events                  com.example.myapplication            D  onStart() called
+2025-12-01 12:18:27.666  2120-2120  Events                  com.example.myapplication            D  onResume() called
+2025-12-01 12:19:36.227  2120-2120  Events                  com.example.myapplication            D  onPause() called
+2025-12-01 12:19:39.069  2120-2120  Events                  com.example.myapplication            D  onStop() called
+2025-12-01 12:19:39.094  2120-2120  Events                  com.example.myapplication            D  onDestroy() called
+2025-12-01 12:20:48.386  2120-2120  Events                  com.example.myapplication            D  onCreate(Bundle?) called
+2025-12-01 12:20:49.462  2120-2120  Events                  com.example.myapplication            D  onStart() called
+2025-12-01 12:20:49.518  2120-2120  Events                  com.example.myapplication            D  onResume() called
+2025-12-01 12:21:08.667  2120-2120  Events                  com.example.myapplication            D  onPause() called
+2025-12-01 12:21:13.165  2120-2120  Events                  com.example.myapplication            D  onStop() called
+2025-12-01 12:21:27.621  2120-2120  Events                  com.example.myapplication            D  onStart() called
+2025-12-01 12:21:27.624  2120-2120  Events                  com.example.myapplication            D  onResume() called
+2025-12-01 12:24:43.436  2120-2120  Events                  com.example.myapplication            D  onPause() called
+2025-12-01 12:24:43.469  2120-2120  Events                  com.example.myapplication            D  onStop() called
+2025-12-01 12:24:43.511  2120-2120  Events                  com.example.myapplication            D  onDestroy() called
+2025-12-01 12:24:44.507  2120-2120  Events                  com.example.myapplication            D  onCreate(Bundle?) called
+2025-12-01 12:24:45.065  2120-2120  Events                  com.example.myapplication            D  onStart() called
+2025-12-01 12:24:45.158  2120-2120  Events                  com.example.myapplication            D  onResume() called
+
+1. Po pierwszym uruchomieniu aplikacji
+
+Wywołane metody:
+
+onCreate → onStart → onResume
+
+2. Po wciśnięciu przycisku Cofnij
+onPause → onStop → onDestroy
+
+3. Po ponownym uruchomieniu aplikacji
+onCreate → onStart → onResume
+
+4. Po wciśnięciu przycisku Home
+onPause → onStop
+
+5. Po powrocie z listy ostatnich aplikacji
+onStart → onResume
+
+Obrót ekranu (zmiana orientacji)
+Co się stało?
+
+Przy obróceniu ekranu aktywność została zniszczona i utworzona ponownie (pełny restart).
+
+Logi po obróceniu
+onPause
+onStop
+onDestroy
+onCreate
+onStart
+onResume
+
+Które pytanie się wyświetla?
+Po obróceniu ekranu ponownie wyświetla się pytanie nr 1, ponieważ stan nie był jeszcze zapisywany (brak użycia onSaveInstanceState).
+
+
+---------------------------- PROCESS STARTED (6217) for package com.example.myapplication ----------------------------
+2025-12-01 12:36:49.239  6217-6217  Events                  com.example.myapplication            D  onCreate(Bundle?) called
+2025-12-01 12:36:49.605  6217-6217  Events                  com.example.myapplication            D  onStart() called
+2025-12-01 12:36:49.629  6217-6217  Events                  com.example.myapplication            D  onResume() called
+2025-12-01 12:36:55.057  6217-6217  Events                  com.example.myapplication            D  onPause() called
+2025-12-01 12:36:55.181  6217-6217  Events                  com.example.myapplication            D  onStop() called
+2025-12-01 12:36:55.209  6217-6217  Events                  com.example.myapplication            D  onSaveInstanceState() called
+2025-12-01 12:36:55.222  6217-6217  Events                  com.example.myapplication            D  onDestroy() called
+2025-12-01 12:36:55.812  6217-6217  Events                  com.example.myapplication            D  onCreate(Bundle?) called
+2025-12-01 12:36:55.934  6217-6217  Events                  com.example.myapplication            D  onStart() called
+2025-12-01 12:36:55.940  6217-6217  Events                  com.example.myapplication            D  onResume() called
+2025-12-01 12:37:09.980  6217-6217  Events                  com.example.myapplication            D  onPause() called
+2025-12-01 12:37:09.993  6217-6217  Events                  com.example.myapplication            D  onStop() called
+2025-12-01 12:37:10.002  6217-6217  Events                  com.example.myapplication            D  onSaveInstanceState() called
+2025-12-01 12:37:10.004  6217-6217  Events                  com.example.myapplication            D  onDestroy() called
+2025-12-01 12:37:10.175  6217-6217  Events                  com.example.myapplication            D  onCreate(Bundle?) called
+2025-12-01 12:37:10.305  6217-6217  Events                  com.example.myapplication            D  onStart() called
+2025-12-01 12:37:10.319  6217-6217  Events                  com.example.myapplication            D  onResume() called
+
+
+Po obróceniu ekranu wyświetla się tę same pytanie co i przed obróceniem
